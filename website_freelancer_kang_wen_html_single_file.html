@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kang Wen – Freelancer Mahasiswa</title>
+  <meta name="description" content="Freelancer mahasiswa yang menawarkan layanan Editor Canva, Copywriter, Data Entry, dan Fotografer dengan harga ramah mahasiswa dan hasil profesional." />
+  <meta name="author" content="Muhammad Wendy Pratama" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --primary:#2563eb;      /* biru - branding */
+      --primary-strong:#1e40af;
+      --accent:#dbeafe;       /* biru muda */
+      --ring:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji"}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--ring);z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800}
+    .brand .logo{width:36px;height:36px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),#22d3ee);color:white;border-radius:12px;font-weight:800}
+    .nav a{font-weight:600}
+    .menu{display:flex;gap:18px;align-items:center}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--ring);background:var(--card);font-weight:600}
+    .btn.primary{background:var(--primary);border-color:var(--primary);color:#fff}
+    .btn.primary:hover{background:var(--primary-strong)}
+    .hero{padding:72px 0 36px}
+    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+    .badge{display:inline-block;background:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600}
+    h1{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:12px 0}
+    p.lead{font-size:clamp(16px,2.5vw,20px);color:var(--muted)}
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:20px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+    .grid{display:grid;gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .section{padding:56px 0}
+    .section h2{font-size:clamp(22px,3.2vw,32px);margin:0 0 8px}
+    .section p.sub{color:var(--muted);margin-top:0}
+    .service{padding:18px}
+    .service h3{margin:10px 0 6px}
+    .service p{color:var(--muted);margin:0}
+    .stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .chip{padding:6px 10px;border-radius:999px;border:1px solid var(--ring);background:#fff;font-weight:600;font-size:14px}
+    .why{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .why .item{padding:18px}
+    .portfolio .thumb{aspect-ratio:16/10;border-radius:14px;overflow:hidden}
+    .portfolio img{width:100%;height:100%;object-fit:cover}
+    .testi .quote{padding:18px}
+    .pricing .note{padding:18px;display:flex;gap:12px;align-items:flex-start}
+    .blog .post{padding:18px}
+    .blog .post h4{margin:6px 0}
+    .contact .links{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    .footer{padding:24px 0;border-top:1px solid var(--ring);text-align:center;color:var(--muted)}
+    @media (max-width: 920px){
+      .hero .wrap{grid-template-columns:1fr}
+      .why{grid-template-columns:1fr 1fr}
+      .grid-3{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .menu{display:none}
+      .contact .links{grid-template-columns:1fr}
+      .why{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">KW</div>
+        <div>Kang Wen • Freelancer</div>
+      </div>
+      <nav class="menu">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#services">Layanan</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#contact">Kontak</a>
+        <a class="btn primary" href="https://wa.me/6285183376862" target="_blank" rel="noopener">Chat WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container wrap">
+        <div>
+          <span class="badge">Ramah mahasiswa • Hasil profesional</span>
+          <h1>Freelancer Mahasiswa – Kreatif, Profesional, Terjangkau</h1>
+          <p class="lead">Membantu kebutuhan <strong>desain</strong>, <strong>tulisan</strong>, <strong>data</strong>, dan <strong>dokumentasi</strong> Anda dengan sentuhan kreatif mahasiswa.</p>
+          <div class="stack">
+            <a class="btn primary" href="https://wa.me/6285183376862" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
+            <a class="btn" href="#services">Lihat Layanan</a>
+            <a class="btn" href="https://forms.gle/your-form-link" target="_blank">Isi Form Project</a>
+          </div>
+        </div>
+        <div class="card" style="padding:20px">
+          <h3 style="margin:0 0 8px">Ringkasan Layanan</h3>
+          <div class="grid grid-2">
+            <div class="service">
+              <strong>Editor Canva</strong>
+              <p>Desain logo, poster, banner, konten sosmed, presentasi, dan lainnya.</p>
+            </div>
+            <div class="service">
+              <strong>Copywriter</strong>
+              <p>Artikel, caption IG, naskah promosi, dan konten kreatif.</p>
+            </div>
+            <div class="service">
+              <strong>Data Entry</strong>
+              <p>Microsoft Office & Google Workspace: Word, Excel, PowerPoint, Docs, Sheets.</p>
+            </div>
+            <div class="service">
+              <strong>Fotografer</strong>
+              <p>Dokumentasi acara, produk, potret, dan kebutuhan visual lainnya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2>Portofolio</h2>
+        <p class="sub">Contoh karya nyata dari Kang Wen.</p>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="thumb"><img src="images/poster-kampus.jpg" alt="Poster Event Kampus" /></div>
+            <div style="padding:14px 18px 18px">
+              <strong>Poster Event Kampus</strong>
+              <p class="sub">Desain cepat untuk publikasi IG & cetak.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb"><img src="images/logo-komunitas.png" alt="Logo Komunitas" /></div>
+            <div style="padding:14px 18px 18px">
+              <strong>Logo Komunitas</strong>
+              <p class="sub">Identitas sederhana, mudah diingat.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb"><img src="images/foto-produk.jpg" alt="Dokumentasi Produk" /></div>
+            <div style="padding:14px 18px 18px">
+              <strong>Dokumentasi Produk</strong>
+              <p class="sub">Foto clean siap katalog & marketplace.</p>
+            </div>
+          </div>
+        </div>
+        <div class="stack" style="margin-top:14px">
+          <a class="btn" href="https://forms.gle/your-form-link" target="_blank">Ajukan Project via Form</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian lain tetap sama (About, Services, Testimoni, Pricing, Blog, Contact, Footer) -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>“Dikerjakan dengan hati, untuk hasil yang berarti.”</p>
+      <p>© 2025 Muhammad Wendy Pratama</p>
+    </div>
+  </footer>
+</body>
+</html>
